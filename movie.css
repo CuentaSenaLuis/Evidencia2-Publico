@@ -1,0 +1,63 @@
+body{
+    font-family: 'DM Sans', sans-serif;
+    height: 500px;
+    background-image: url("./img/moviesFondo.png");
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-position-y:center;
+    background-size: 100%;
+}
+
+img{
+    padding: 0px;
+    height: 275px;
+    width: 183px;
+
+}
+
+.objContainer{
+    background-color: #2ad8a19d;
+    height: 295px;
+    width: 183px;
+    margin: 0px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.objContainer:hover{
+    background-color: #2181a79d;
+}
+.Titulo{
+    padding: 0px;
+    margin-top: 2px;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    width: 100%;
+}
+.linkContainer{
+    background-color: #2ad8a19d;
+}
+.linkContainer{
+    padding: 25px;
+}
+.flex-nav{
+    margin-left: 25%;
+}
+nav a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    
+}
+nav li{
+    display:inline-block;
+    flex-wrap: nowrap;
+    padding:4px 10px;
+    border:0 transparent;
+    text-align:center;
+}

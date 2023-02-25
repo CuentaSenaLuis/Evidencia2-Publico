@@ -1,0 +1,23 @@
+.checkers{
+
+    padding-right: 25px;
+}
+
+#check1, #check2, #check3{
+
+}
+
+#rad1:checked ~ #check1,
+#rad2:checked ~ #check2,
+#rad3:checked ~ #check3{
+    background-color: greenyellow;
+}
+
+.checkers:hover{
+
+    background-color: aqua;
+}
+
+#submit{
+
+}
