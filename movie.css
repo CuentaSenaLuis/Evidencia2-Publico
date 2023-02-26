@@ -1,37 +1,25 @@
 body{
     font-family: 'DM Sans', sans-serif;
-    height: 500px;
     background-image: url("./img/moviesFondo.png");
     background-repeat:no-repeat;
     background-position-x:center;
     background-position-y:center;
-    background-size: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    border:0px;
+    margin:0px;
+    padding:0px;
 }
-
+body::-webkit-scrollbar{
+    display: none;
+}
 img{
     padding: 0px;
     height: 275px;
     width: 183px;
-
-}
-
-.objContainer{
-    background-color: #2ad8a19d;
-    height: 295px;
-    width: 183px;
-    margin: 0px;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-.objContainer:hover{
-    background-color: #2181a79d;
-}
-.Titulo{
-    padding: 0px;
-    margin-top: 2px;
-    text-align: center;
-    font-family: 'DM Sans', sans-serif;
+    transition-duration: 500ms;
+    transition-property: height, width, margin-left, margin-top;
 }
 .flex-container{
     display: flex;
@@ -39,25 +27,69 @@ img{
     justify-content:space-evenly;
     width: 100%;
 }
-.linkContainer{
-    background-color: #2ad8a19d;
+.objContainer:hover img{
+    margin-top: -150px;
 }
-.linkContainer{
-    padding: 25px;
+.objContainer{
+    background-color: #2ad8a1;
+    height: 295px;
+    width: 183px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 0px;
+    overflow: hidden;
+}
+.objContainer:hover{
+    background-color: #2181a7;
+}
+.LoremContainer{
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.733);
+}
+.Lorem{
+    border:0px;
+    margin:0px;
+    padding:0px;
+    font-size: 10px;
+    text-align: justify;
+}
+.Titulo{
+    padding: 0px;
+    margin-top: 2px;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
 }
 .flex-nav{
-    margin-left: 25%;
+    background-color: rgb(245, 245, 245);
+    margin:0px;
+    border:0px;
+}
+#uperLinkContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.linkContainer{
+    display: inline-block;
+    flex-wrap: nowrap;
+    background-color: rgb(245, 245, 245);
+    padding: 10px 0px;
+    transition-duration: 500ms;
+    transition-property: background-color, color;
+}
+.linkContainer:hover{
+    background-color: rgb(33, 150, 243);
+}
+a{
+    text-decoration: none;
+    color: #000000;
 }
 nav a{
-    text-decoration: none;
     font-size: 25px;
-    color: #000000;
-    
+    padding: 10px 40px; 
 }
-nav li{
-    display:inline-block;
-    flex-wrap: nowrap;
-    padding:4px 10px;
-    border:0 transparent;
-    text-align:center;
+nav a:hover{
+    transition-duration: 250ms;
+    transition-property: color;
+    color: rgb(245, 245, 245);  
 }

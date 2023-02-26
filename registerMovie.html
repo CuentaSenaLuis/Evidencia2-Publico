@@ -8,30 +8,28 @@
     <title>Register</title>
 </head>
 <body>
+    <div id="upperContainer">
     <div id="container">
-        <form onsubmit="Check();">
-            <ol style="list-style: none;">
-                <li class="list1">
-                    <label>Ingrese su Nombre Completo: <input class="valid" type="text" placeholder="Luis" name="text" required pattern="[a-zA-Z]+" minlength="6" maxlength="20"></label>
-                </li>
-                <li class="list1">
-                    <label>Coloque su nombre de Usuario: <input class="valid" type="text" placeholder="Bacon69" required pattern="[a-zA-Z]+" minlength="4" maxlength="20"></label>
-                </li>
-                <li class="list1">
-                    <label>Coloque su Contraseña: <input class="valid" type="password" required pattern="[a-zA-Z]+" minlength="6" maxlength="20"></label>
-                </li>        
-            </ol>
-            <label>Registrarse: <input type="submit"></input></label>
-            <br>
+        <form>
+            <table>
+                <tr>
+                    <th><label>Ingrese su Nombre Completo:</label></th>  
+                    <th><input class="valid" type="text" placeholder="Luis" name="text" required pattern="[a-zA-Z]+" minlength="6" maxlength="20"></th>
+                </tr>
+                <tr>
+                    <th><label>Coloque su nombre de Usuario:</label></th>
+                    <th><input class="valid" type="text" placeholder="Bacon69" required pattern="[a-zA-Z]+" minlength="4" maxlength="20"></th>
+                </tr>
+                <tr>
+                    <th><label>Coloque su Contraseña:</label></th>
+                    <th><input class="valid" type="password" required pattern="[a-zA-Z]+" minlength="6" maxlength="20"></th>
+                </tr>
+            </table>
             <br>
             <br>
             <a id="link" href="movie.html">Ir a la pagina de peliculas</a>
         </form>
-        <script>
-            function Check(){
-                console.log("Bien!")
-            }
-        </script>
+    </div>
     </div>
 </body>
 </html>
